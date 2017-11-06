@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Home1Four {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Enter your text");
+        String text = sc.nextLine();
+        char[] t = text.toCharArray();
+        System.out.println(Arrays.toString(t));
+        int count = 0;
+        for (char i : t) {
+            if (i == 'b') {
+                count++;
+            }
+        }
+        System.out.println("In your text " + count + " numbers of b letter");
+        sc.close();
+    }
+}
